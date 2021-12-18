@@ -1,7 +1,12 @@
-__author__ = 'weijie'
+# -*- coding:utf-8 -*-
+
+__author__ = 'linxinloningg'
+
+import os as _os
+import sys as _sys
 
 from EmQuantAPI import *
-import sys as _sys, os as _os
+
 
 def installEmQuantAPI():
     print("Start to install EmQuantAPI...")
@@ -12,17 +17,17 @@ def installEmQuantAPI():
 
     currDir = _os.path.split(_os.path.realpath(__file__))[0]
     site_pkg_names = ["site-packages"]
-    if(UtilAccess.adapter.get_os_name() == OS_Linux):
+    if UtilAccess.adapter.get_os_name() == OS_Linux:
         site_pkg_names.append("dist-packages")
 
-    #get site-packages path
+    # get site-packages path
     packagepath = ""
     for site_pkg_name in site_pkg_names:
         if packagepath != "":
             break
         for spath in _sys.path:
             pos = spath.find(site_pkg_name)
-            if(pos >= 0 and spath[pos:]==site_pkg_name):
+            if pos >= 0 and spath[pos:] == site_pkg_name:
                 packagepath = spath
                 break
 
@@ -33,8 +38,8 @@ def installEmQuantAPI():
         pthFile.close()
         print("Success:", "EmQuantAPI installed.")
     else:
-        print( "Error: EmQuantApi install fail!(in get pth)")
+        print("Error: EmQuantApi install fail!(in get pth)")
+
 
 if __name__ == "__main__":
     installEmQuantAPI()
-
