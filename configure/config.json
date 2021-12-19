@@ -1,0 +1,11 @@
+{
+  "manualactive": {
+    "user": "xxx-xxx-xxx-xx",
+    "password": "********",
+    "email": "xxxxxx@qq.com"
+  },
+  "qywechat": {
+    "send_url": "",
+    "id_url": ""
+  }
+}
