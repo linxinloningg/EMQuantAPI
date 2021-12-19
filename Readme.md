@@ -1,5 +1,7 @@
 ### EMQuantAPI Python使用
 
+**项目地址**：https://github.com/linxinloningg/EMQuantAPI
+
 开发源码：在量化接口官网（http://quantapi.eastmoney.com/）下载压缩包EmQuantAPI_Python.zip,下载完成后解压。其中：
 
 * installEmQuantAPI.py用于注册python接口；
@@ -11,7 +13,9 @@
 ### 目录：
 
 * 接口配置的系统环境要求与方法
-* 
+* 接口代码使用框架
+* 程序主体框架
+* 另外
 
 #### 1.接口配置的系统环境要求与方法
 
@@ -201,7 +205,7 @@ else:
     print("demo end")
 ```
 
-### 程序主体框架：
+### 3.程序主体框架：
 
 ![主体框架](Readme.assets/image-20211219133509058.png)
 
@@ -316,7 +320,7 @@ ma即为经过哟了移动平均处理
 
   **更多指标函数，可以通过[指标手册](https://github.com/linxinloningg/EMQuantAPI/blob/main/%E6%8C%87%E6%A0%87%E6%89%8B%E5%86%8CV2.5.3.0.CHM)配合http://quantapi.eastmoney.com/Cmd/ChoiceSerialSection?from=web东财命令生成网站构建**
 
-  ### 另外：
+  ### 4.另外：
 
   还有一个用于信息通知的企业微信机器人，需自己新建一个群，添加群机器人并获取到相关api接口，添加到[json](https://github.com/linxinloningg/EMQuantAPI/blob/main/configure/config.json)配置文件即可：
 
